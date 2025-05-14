@@ -5,7 +5,11 @@ import pandas as pd
 CSV_FILES = [
     "/data/historical/kraken_trades_since_1743811200.csv",
     "/data/historical/kraken_trades_since_1746111528.csv",
-    "/data/historical/kraken_trades_since_1746481062.csv"
+    "/data/historical/kraken_trades_since_1746481062.csv",
+    "/data/historical/kraken_trades_since_1746481336.csv",
+    "/data/historical/kraken_trades_since_1746569353.csv",
+    "/data/historical/kraken_trades_since_1747157263.csv",
+    "/data/historical/kraken_trades_since_1747162999.csv",
     # Add more CSV file paths here
 ]
 DUCKDB_FILE = "/data/crypto.duckdb"  # Output DuckDB file
