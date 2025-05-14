@@ -31,7 +31,6 @@ RUN wget https://github.com/ta-lib/ta-lib/releases/download/v0.6.4/ta-lib-0.6.4-
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY entrypoint.sh /services/base/entrypoint.sh
-RUN chmod +x /services/base/entrypoint.sh
-
-ENTRYPOINT ["/services/base/entrypoint.sh"]
+COPY ./entrypoint.sh /services/base/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
+ENTRYPOINT ["/app/entrypoint.sh"]
